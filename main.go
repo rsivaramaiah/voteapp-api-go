@@ -60,7 +60,7 @@ func createlanguage(w http.ResponseWriter, req *http.Request) {
 	_ = json.NewDecoder(req.Body).Decode(&detail)
 	name := strings.ToLower(params["name"])
 
-	fmt.Printf("POST api call made to /languages/%s\n", name)
+	fmt.Printf("POST api call maded to /languages/%s\n", name)
 
 	lang := language{name, detail}
 
